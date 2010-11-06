@@ -1,0 +1,10 @@
+Current TODO List (to be unmaintained):
+
+ * Normalize and standardize the database schema (IN PROGRESS)
+ * Fix links (IN PROGRESS)
+ * Update and trim the included libraries
+ * Evaluate if included libs are OK
+ * Move static-ish config to YAML or something
+ * Fix branding
+
+

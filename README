@@ -1,0 +1,49 @@
+*** WARNING ***
+
+This branch (ADODB) of ATBBS is VERY unstable.  In fact, 65% or more of the board is broken at time of writing.
+
+YOU HAVE BEEN WARNED.
+
+============================
+INSTALLATION
+============================
+
+Your host must have PHP version 5.2 or greater. To check your host's version of PHP, create a page called test.php with the content "<?php echo phpversion() ?>". If it's less than 5.2, do not install ATBBS.
+
+You need MySQL, Apache 2 (with mod_rewrite turned on), and lots of fucking patience.
+
+To get started, visit http://yourbbs.com/install/, you'll then be walked through the installation process.
+
+STUFF BELOW HERE IS OLD AS SHIT
+
+- Create a MySQL database. Navigate to the database in phpmyadmin. Click the "import" tab and, as the file to import, select INSTALL.sql from the zip. Click Go.
+- Edit the database details in /includes/config.php. For example, if your database is named 'durrbbs', change line 8 to 'database' => 'durrbbs' .
+- Edit the other settings in config.php. In particular, change the DOMAIN definition to your domain.
+- Upload the ATBBS files (except INSTALL.sql) to your root public directory.
+- Go to the back up ID page (yourdomain.com/back_up_ID). Replace ADMIN ID HERE in config.php with the ID found on that page. You are now the administrator.
+
+============================
+NOTES
+============================
+
+- File encoding must always be UTF-8 _without BOM_. I recommend modifying files with Notepad++.
+- If image uploading is enabled, /img/ and /thumbs/ need to be chmodded to 777. Your FTP client can do this.
+
+============================
+LICENSE
+============================
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
